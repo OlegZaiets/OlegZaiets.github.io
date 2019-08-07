@@ -1,0 +1,45 @@
+.section {
+    text-align: center;
+    padding: 44px 0;
+  
+    &__title-description {
+      @extend %text;
+      font-family: $font-title-description;
+      margin-bottom: 18px;
+      font-size: 24px;
+      color: $color-title;
+    }
+  
+    &__title {
+      @include text-title;
+      margin-bottom: 64px;
+      font-size: 30px;
+      color: $color-title;
+  
+      &::after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 3px;
+        margin: 0 auto;
+        margin-top: 40px;
+        background-color: $color-main-1;
+      }
+    }
+  
+    &__paragraph {
+      @extend %text;
+      font-family: $font-paragraph;
+      font-size: 15px;
+      font-weight: 400;
+      color: $color-paragraph;
+    }
+  
+    &__list-item-title {
+      @include text-title;
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-weight: 400;
+      color: $color-title;
+    }
+  }

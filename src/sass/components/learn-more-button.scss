@@ -1,0 +1,11 @@
+.learn-more {
+    @extend %button;
+    width: 160px;
+    height: 40px;
+    font-family: $font-title;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-main-5;
+    border: 3px solid $color-main-5;
+  }
